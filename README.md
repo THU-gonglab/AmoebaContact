@@ -10,11 +10,7 @@ More details can be found in http://structpred.life.tsinghua.edu.cn/amoebacontac
 # Tips for usage:
 ## "run.py"
 1. arguments of this scripts are :
-        '--data_dir' (input data path)
-	      '--model_dir' (output model path)
-	      '--stack_num' (number of blocks stacked in the whole architecture)
-	      '--combine_num' (number of operators in one block)
-	      '--op_depth' (number of channel for every operator)
+        '--data_dir' (input data path);    '--model_dir' (output model path);    '--stack_num' (number of blocks stacked in the whole architecture);    '--combine_num' (number of operators in one block);    '--op_depth' (number of channel for every operator)
 ## "finetune.py"
 1. This script would write a shell script called "run.sh". When finished, execute that script by "bash ./run.sh" for model finetuning. 
 ## "AmoebaContact.py"
