@@ -4,7 +4,7 @@ More details can be found in http://structpred.life.tsinghua.edu.cn/amoebacontac
 
 # Contents explination:
 1. "run.py" is for architecture searching, the searching method is mainly coded in the package "autoML".
-2. 
+2. "finetune.py" is for finetuning model of different cutoffs.
 3. "AmoebaContact.py" intergrates feature production, extraction and the whole inference process using our well-trained model, which is stored in the fold "models".
 
 # Tips for usage:
@@ -14,7 +14,9 @@ More details can be found in http://structpred.life.tsinghua.edu.cn/amoebacontac
 	      '--model_dir' (output model path)
 	      '--stack_num' (number of blocks stacked in the whole architecture)
 	      '--combine_num' (number of operators in one block)
-	      '--op_depth' (number of channel for every operator) 
+	      '--op_depth' (number of channel for every operator)
+## "finetune.py"
+1. This script would write a shell script called "run.sh". When finished, execute that script by "bash ./run.sh" for model finetuning. 
 ## "AmoebaContact.py"
 1. Package needs to be installed: BioPython & prody;
 2. Blast package is also needed, install-command recommended by us is "sudo apt-get install ncbi-blast+";
